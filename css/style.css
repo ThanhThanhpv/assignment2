@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+}
+
+.bg-grey {
+    background: #f7f7f7;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    color: #868e96;
+    font-size: 10px;
+}
+
+section > .container{
+    width: 1200px;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 30px;
+}
+
+#nav-bar {
+    text-align: center;
+    position: relative;
+}
+
+/* Căn chỉnh ảnh đại diện và tên */
+.fisrt1 {
+    max-height: 350px;
+    overflow: hidden;
+    position: relative;
+    width: 1200px;
+    margin: auto;
+}
+
+.anh-dai-dien {
+    width: 100%;
+    filter: brightness(0.5);
+}
+
+.name {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #a19fa1;
+}
+
+.name h1 {
+    font-weight: 400;
+    color: #f7f7f7;
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+/* Căn chỉnh thanh điều hướng */
+#nav-bar .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.dieu-huong {
+    padding: 0 80px;
+    color: #333333;
+    text-align: center;
+    font-weight: 500;
+    margin: 2px 0;
+    line-height: 1.2;
+}
+
+.dieu-huong span {
+    font-size: 9px;
+    color:#ced4da;
+    margin: 0;
+    padding: 0;
+}
+
+.dieu-huong h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 530;
+    font-size: 16px;
+}
+
+#nav-bar .container a {
+    border-left: 1px solid #eeeeee ;
+    padding: 17px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 8px;
+    color: #454545;
+}
+.icon {
+    margin-left: 4px;
+    color: #199cdb;
+}
+
+.anh-ca-nhan {
+    border: 8px solid #fff;
+    border-radius: 50%;
+    width: 120px;
+    position: absolute;
+    transform: translate(-50%, -35%);
+}
+
+/* Căn chỉnh mục tiêu nghề nghiệp */
+#about .container {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+#target {
+    max-width: 50%;
+    font-size: 10px;
+    line-height: 1.6;
+    padding: 60px 20px 40px 204px;
+}
+
+.dam-nhat {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #343a40;
+    font-weight: 500;
+}
+
+#personal-info {
+    background-color: #f1f3f5;
+    display: inline-block;
+    min-width: 50%;
+    line-height: 1.6;
+    padding: 60px 0;
+}
+
+#personal-info h1 {
+    padding-left: 40px;
+}
+
+.mt-40 {
+    list-style: none;
+}
+
+.mt-40 li span {
+    font-weight: bold;
+    color: #454545;
+}
+
+.mt-40 li {
+    margin-bottom: 4px;
+}
+
+.sticker {
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.mxh {
+    color: #199cdb;
+    padding: 2px;
+}
+
+/* Bố cục grid cho bảng thành tích */
+#job-info .container {
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    /* grid-template-rows: repeat(6, 1fr); */
+    justify-content: center;
+    /* align-items: center; */
+    grid-gap: 20px;
+    grid-template-areas: 
+    "box1 box2 box3"
+    "box1 box2 box6"
+    "box1 box5 box6"
+    "box4 box5 box6"
+    "box4 ...  box6"
+    "box4 ...  ... "   ;
+}
+
+.box1 {
+    grid-area: box1;
+}
+.box2 {
+    grid-area: box2;
+}
+.box3 {
+    grid-area: box3;
+}
+.box4 {
+    grid-area: box4;
+}
+.box5 {
+    grid-area: box5;
+}
+.box6 {
+    grid-area: box6;
+}
+
+.point li::marker  {
+    color: #199cdb;
+    font-size: 18px;
+}
+
+.point li {
+    margin: 20px 0;
+    padding-right: 10px;
+    line-height: 1.6;
+}
+
+.diem-manh {
+    border: 1px solid #eeeeee;
+}
+
+.diem-manh h1 {
+    margin: 20px 32px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.diem-manh h1 i {
+    font-size: 30px;
+    color: #adb5bd;
+}
+
+.nth-child p:nth-child(2) {
+    font-style: italic;
+}
+
+.nth-child p:first-child {
+    font-weight: bold;
+}
+
+.to-day {
+    border: 1px solid #199cdb;
+    background-color: #199cdb;
+    border-radius: 6px;
+    padding: 0 4px;
+    color: #fff;
+}
+
+/* Căn chỉnh phần sở thích */
+.interests {
+    display: flex;
+    gap: 10px;
+    padding: 20px; 
+    list-style: none;
+}
+
+
+.loa li::first-letter {
+    text-transform: capitalize;
+}
+
+.loa {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.loa i {
+    color: #199cdb;
+    border: 1px solid #199cdb;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Kỹ năng */
+.anh-nhat {
+    margin-left: 20px;
+}
+.tieng-anh-xanh {
+    width: 30px;
+    height: 2px;
+    background-color: #199cdb;
+    display: inline-block; 
+    border-radius: 50%;
+    margin: 6px 6px 10px 0;
+}
+
+.tieng-anh-nhat {
+    background-color: #e9ecef;
+}
+
+.tieng-nhat-xanh {
+    height: 1px;
+}
+
+.tieng-nhat-nhat {
+    background-color: #e9ecef;
+}
+
+/* chứng chỉ và giải thưởng */
+#certificate .container {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container .section-title {
+    padding-top: 30px;
+    margin-left: 203px;
+}
+
+.chung-chi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.anh {
+    width: 150px;
+}
+
+.duong-ke {
+    width: 398px;
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+
+.ccweb {
+    line-height: 1.5;
+}
+
+.ccweb p:first-child {
+    margin-bottom: 10px;
+    color: #343a40;
+}
+
+.gach-chan {
+    border-bottom: 1px solid #e0d1ae;
+}
+
+.gach-ben-trai {
+    border-left: 1px solid #e0d1ae;
+    padding-left: 10px;
+}
+
+/* dự án */
+#project .du-an {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.chu-de {
+    width: 250px;
+    line-height: 1.4;
+}
+
+.table {
+    border: 1px solid #ced4da;
+    padding: 10px 4px 10px 6px;
+}
+
+.bo-duong-vien {
+    border-top: none;
+}
+
+table tr {
+    border: 1px solid #ced4da;
+}
+
+table td {
+    padding: 6px 6px;
+    vertical-align: top; 
+}
+
+table td:first-child {
+    width: 50px;
+}
+
+table {
+    border-collapse: collapse;  
+}
+
+.cong-nghe {
+    padding-bottom: 20px;
+}
+
+.cv-ca-nhan {
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.developer span {
+    margin-left: 12px;
+}
+
+.developer span:first-child {
+    background-color: #199cdb;
+    border: 1px solid #199cdb;
+    border-radius: 16px;
+    padding: 1px 6px;
+    display: inline-block;
+    color: #fff;
+}
+
+.icon-du-an {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+/*footer*/
+#footer li i {
+    border-radius: 50%;
+    color: #199cdb;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+#footer ul { 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    padding-left: 0;
+}
+
+#footer .container {
+    padding-left: 0;
+}
+
+
+
+
